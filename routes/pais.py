@@ -14,7 +14,7 @@ from datetime import datetime
 pais = APIRouter()
 
 
-@pais.get("/paises", response_model=List[Pais])
+@pais.get("/", response_model=List[Pais])
 def get_paises():
     return conn.execute(paises.select()).fetchall()
 
