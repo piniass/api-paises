@@ -3,7 +3,7 @@ from sqlalchemy.sql.sqltypes import Integer, String, Date
 from config.db import meta, engine
 
 paises = Table(
-    "paises",
+    "paises_api",
     meta,
     Column("id", Integer, primary_key=True),
     Column("name",String(255)),
